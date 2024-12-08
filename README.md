@@ -1,4 +1,9 @@
 # Taller 2 Módulo 3
+
+# 1. Manejo del Entorno de Ejecución y Consola
+**Implementa el uso de console.log()**
+En este cejercicio creè el archivo script.js donde añadì una función para mostrar un mensaje en la consola cuando la pàgina carga y otra para mostrar el nombre de los servicios al hacer clic sobre ellos.
+
 # Explicación de Event Loop en JavaScript  
 
 JavaScript es un lenguaje de programación que se ejecuta en un solo hilo (single-threaded). Esto significa que solo puede ejecutar una tarea a la vez. Sin embargo, es muy eficiente en el manejo de operaciones asíncronas gracias a su modelo de "event loop."  
