@@ -1,104 +1,162 @@
-<!DOCTYPE html>  
-<html lang="es">  
-<head>  
-    <meta charset="UTF-8">  
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <title> 🚑 Equipo Médico </title>  
-  <!-- Enlace a la hoja de estilos -->  
-  <link rel="stylesheet" href="css/styles.css" />
-</head>  
-<body>  
-  <!-- Menú versiòn con Bootstrap -->  
-   
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🚑 Medical Center</title> 
+    <!-- Enlace a la hoja de estilos -->  
+    <link rel="stylesheet" href="css/styles.css" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">  
+
+</head>
+<body>
+  <header>  
+<!-- Menú Bootstrap -->   
   <nav class="navbar navbar-expand-lg navbar-light bg-secondary">  
     <a class="navbar-brand" href="index.html">  
-      <img src="images/medical-center.png" alt="Logotipo del Hospital" style="height: 40px;">  
+        <img src="images/medical-center.png" alt="Logotipo del Hospital" style="height: 40px;">  
     </a>  
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">  
-      <span class="navbar-toggler-icon"></span>  
-    </button>  
-    <div class="collapse navbar-collapse justify-content-start" id="navbarNav">  
-      <ul class="navbar-nav">  
-        <li class="nav-item">  
-          <a class="nav-link text-white" href="equipo.html">Equipo médico</a>  
-        </li>  
-        <li class="nav-item">  
-          <a class="nav-link text-white" href="contacto.html">Contacto</a>  
-        </li>  
-        <li class="nav-item">  
-          <a class="btn btn-primary" href="#" role="button">Reservar Cita</a>  
-        </li>  
-      </ul>  
+    
+    <!-- Botón siempre visible -->  
+    <div class="d-flex order-lg-2">  
+        <a class="btn btn-primary ms-2" href="#" role="button">Reservar Cita</a>  
     </div>  
-  </nav>  
-</header>  
-
+    
+    <button class="navbar-toggler order-lg-1" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">  
+        <span class="navbar-toggler-icon"></span>  
+    </button>  
+     
+    <div class="collapse navbar-collapse order-lg-1" id="navbarNav">  
+        <ul class="navbar-nav me-auto">  
+            <li class="nav-item">  
+                <a class="nav-link text-white" href="equipo.html">Equipo médico</a>  
+            </li>  
+            <li class="nav-item">  
+                <a class="nav-link text-white" href="contacto.html">Contacto</a>  
+            </li>  
+        </ul>  
+    </div>  
+</nav> 
+</header> 
     <!-- Sección de Presentación -->  
     <section id="team" class="section-team">  
         <h1>Nuestro Equipo Médico</h1>  
-        <p>En Medical Center, contamos con profesionales altamente calificados y comprometidos con la excelencia médica. 
-          <br>Nuestro equipo trabaja día a día para brindar la mejor atención y cuidado a nuestros pacientes.</p>  
+        <p>En Medical Center, contamos con profesionales altamente calificados y comprometidos con la excelencia médica.  
+            <br>Nuestro equipo trabaja día a día para brindar la mejor atención y cuidado a nuestros pacientes.</p>  
     </section>  
-    <br><br><br>
+
+ <!-- Botones para filtrar médicos -->  
+<div class="text-center my-4">  <!-- Usamos text-center para centrar el contenido -->  
+  <button id="filter-button" class="btn btn-success mb-4">Filtrar médicos con más de 5 años de experiencia</button>  
+  <button id="reset-button" class="btn btn-warning mb-4">Mostrar todos los médicos</button>  
+</div>
 
     <!-- Lista del Equipo Médico -->  
-    <section class="team-grid">  
-        <article class="team-item">  
-            <img src="images/doc1.jpg" alt="Dr. Juan Martínez">  
-            <h3>Dr. Juan Martínez</h3>  
-            <h4>Cardiología</h4>  
-            <p>Especialista con más de 15 años de experiencia en cardiología y cirugía.</p>  
-        </article>  
-
-        <article class="team-item">  
-            <img src="images/dra1.jpg" alt="Dra. Ana Silva">  
-            <h3>Dra. Ana Silva</h3>  
-            <h4>Pediatría</h4>  
-            <p>Dedicada al cuidado de la salud infantil. </p>  
-        </article>  
-
-        <article class="team-item">  
-            <img src="images/doc2.jpg" alt="Dr. Carlos Ruiz">  
-            <h3>Dr. Carlos Ruiz</h3>  
-            <h4>Neurología</h4>  
-            <p>Experto en diagnóstico y tratamiento de trastornos neurológicos.</p>  
-        </article>  
-
-        <article class="team-item">  
-            <img src="images/dra2.jpg" alt="Dra. María López">  
-            <h3>Dra. María López</h3>  
-            <h4>Dermatología</h4>  
-            <p>Especialista en tratamientos de estética.</p>  
-        </article>  
+    <section class="team-grid" id="team-grid">  
+        <!-- Aquí se agregarán los médicos dinámicamente mediante JavaScript -->  
     </section>  
-    <br><br>
+    <br><br>  
 
     <!-- FOOTER -->  
     <footer>  
         <div class="container">  
-          <div class="logo">  
-            <img src="images/logo_footer.webp" alt="Logo Medical Center">   
-          </div>  
-          <nav>  
-            <ul>  
-              <li><a href="equipo.html">Equipo Médico</a></li>  
-              <li><a href="contacto.html">Contacto</a></li>  
-              <li><a href="index.html">Servicios</a></li>  
-            </ul>  
-          </nav>  
-          <div class="address">  
-            <p>Dirección:<br>  
-                Calle Falsa 123, Ciudad Falsa <br> Fono: +562 12345678</p>  
-          </div>  
-          <div class="social">  
-            <ul>  
-              <li><a href="https://facebook.com/" target="_blank">Facebook</i></a></li>  
-              <li><a href="https://twitter.com/" target="_blank">X</i></a></li>  
-              <li><a href="https://instagram.com/" target="_blank">Instagram</i></a></li>  
-            </ul>  
-          </div>  
+            <div class="logo">  
+                <img src="images/logo_footer.webp" alt="Logo Medical Center">  
+            </div>  
+            <nav>  
+                <ul>  
+                    <li><a href="equipo.html">Equipo Médico</a></li>  
+                    <li><a href="contacto.html">Contacto</a></li>  
+                    <li><a href="index.html">Servicios</a></li>  
+                </ul>  
+            </nav>  
+            <div class="address">  
+                <p>Dirección:<br>  
+                    Calle Falsa 123, Ciudad Falsa <br> Fono: +562 12345678</p>  
+            </div>  
+            <div class="social">  
+                <ul>  
+                    <li><a href="https://facebook.com/" target="_blank">Facebook</a></li>  
+                    <li><a href="https://twitter.com/" target="_blank">X</a></li>  
+                    <li><a href="https://instagram.com/" target="_blank">Instagram</a></li>  
+                </ul>  
+            </div>  
         </div>  
-      </footer>  
+    </footer>  
+<!-- Scripts de Bootstrap -->  
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>  
+  <script src="script.js"></script>
     
-    </body>  
-    </html>
+    <script>  
+
+        // Datos estáticos de los médicos  
+        const equipoMedico = [  
+            {  
+                nombre: "Dr. Juan Martínez",  
+                especialidad: "Cardiología",  
+                experiencia: 15,  
+                imagen: "images/doc1.jpg",  
+                descripcion: "Especialista con más de 15 años de experiencia en cardiología y cirugía."  
+            },  
+            {  
+                nombre: "Dra. Ana Silva",  
+                especialidad: "Pediatría",  
+                experiencia: 3,  
+                imagen: "images/dra1.jpg",  
+                descripcion: "Dedicada al cuidado de la salud infantil."  
+            },  
+            {  
+                nombre: "Dr. Carlos Ruiz",  
+                especialidad: "Neurología",  
+                experiencia: 1,  
+                imagen: "images/doc2.jpg",  
+                descripcion: "Experto en diagnóstico y tratamiento de trastornos neurológicos."  
+            },  
+            {  
+                nombre: "Dra. María López",  
+                especialidad: "Dermatología",  
+                experiencia: 10,  
+                imagen: "images/dra2.jpg",  
+                descripcion: "Especialista en tratamientos de estética."  
+            }  
+        ];  
+
+        // Función para mostrar el equipo médico  
+        function mostrarEquipo(medicos) {  
+            const teamGrid = document.getElementById('team-grid');  
+            teamGrid.innerHTML = ""; // Limpiar el contenido previo  
+            medicos.forEach(medico => {  
+                const card = document.createElement('article');  
+                card.classList.add('team-item');  
+                card.innerHTML = `  
+                    <img src="${medico.imagen}" alt="${medico.nombre}">  
+                    <h3>${medico.nombre}</h3>  
+                    <h4>${medico.especialidad}</h4>  
+                    <p>${medico.descripcion}</p>  
+                `;  
+                teamGrid.appendChild(card);  
+            });  
+        }  
+
+        // Funciones de filtrado  
+        function filtrarPorExperiencia() {  
+            const medicosFiltrados = equipoMedico.filter(medico => medico.experiencia > 5);  
+            mostrarEquipo(medicosFiltrados); // Mostrar solo médicos filtrados  
+        }  
+
+        function resetFiltrado() {  
+            mostrarEquipo(equipoMedico); // Mostrar todos los médicos  
+        }  
+
+        // Llamar a la función para mostrar el equipo cuando la página se cargue  
+        window.onload = () => {  
+            mostrarEquipo(equipoMedico); // Mostrar todos los médicos  
+            document.getElementById('filter-button').onclick = filtrarPorExperiencia;  // Asignar evento al botón de filtrado  
+            document.getElementById('reset-button').onclick = resetFiltrado; // Asignar evento al botón de reinicio  
+        };  
+
+    </script>  
+</body>  
+</html>

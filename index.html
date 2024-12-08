@@ -11,29 +11,33 @@
 </head>
 <body>
   <header>  
-<!-- Menú versiòn con Bootstrap -->  
-   
-    <nav class="navbar navbar-expand-lg navbar-light bg-secondary">  
-      <a class="navbar-brand" href="index.html">  
+<!-- Menú Bootstrap -->   
+  <nav class="navbar navbar-expand-lg navbar-light bg-secondary">  
+    <a class="navbar-brand" href="index.html">  
         <img src="images/medical-center.png" alt="Logotipo del Hospital" style="height: 40px;">  
-      </a>  
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">  
+    </a>  
+    
+    <!-- Botón siempre visible -->  
+    <div class="d-flex order-lg-2">  
+        <a class="btn btn-primary ms-2" href="#" role="button">Reservar Cita</a>  
+    </div>  
+    
+    <button class="navbar-toggler order-lg-1" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">  
         <span class="navbar-toggler-icon"></span>  
-      </button>  
-      <div class="collapse navbar-collapse justify-content-start" id="navbarNav">  
-        <ul class="navbar-nav">  
-          <li class="nav-item">  
-            <a class="nav-link text-white" href="equipo.html">Equipo médico</a>  
-          </li>  
-          <li class="nav-item">  
-            <a class="nav-link text-white" href="contacto.html">Contacto</a>  
-          </li>  
-          <li class="nav-item">  
-            <a class="btn btn-primary" href="#" role="button">Reservar Cita</a>  
-          </li>  
+    </button>  
+     
+    <div class="collapse navbar-collapse order-lg-1" id="navbarNav">  
+        <ul class="navbar-nav me-auto">  
+            <li class="nav-item">  
+                <a class="nav-link text-white" href="equipo.html">Equipo médico</a>  
+            </li>  
+            <li class="nav-item">  
+                <a class="nav-link text-white" href="contacto.html">Contacto</a>  
+            </li>  
         </ul>  
-      </div>  
-    </nav>  
+    </div>  
+</nav>  
+
   </header>  
 
  
