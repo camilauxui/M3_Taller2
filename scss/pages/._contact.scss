@@ -1,0 +1,39 @@
+/* Estilo de la sección Contacto */  
+.contact-section {  
+    padding: 1rem; /* Relleno */  
+    margin-bottom: 200px;
+  }  
+  .contact-form {  
+    display: flex;  
+    flex-direction: column;  
+    gap: 1rem;  
+    margin: 1.5rem 1rem;  
+    width: 100%;
+    max-width: 50%;  
+    padding: 2rem;  
+    border: none;  
+    border-radius: 5px;    
+    margin: 0 auto;  
+    text-align: left;
+  
+  }  
+  
+  .contact-form label {  
+    text-align: left;  
+  }  
+  
+  .contact-form input, .contact-form textarea {  
+    width: 100%;  
+    padding: 1rem;  
+    border: 1px;  
+    border-radius: 9px;  
+    background-color: #f0f0f0;  
+  }
+  
+  /* Estilo del mapa de ubicación */  
+  .contact-map {  
+    width: 100%; /* Ancho */  
+    height: 300px; /* Altura */  
+    border-radius: 5px; /* Bordes redondeados */  
+    margin-top: 2rem; /* Margen superior */  
+  }

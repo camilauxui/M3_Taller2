@@ -1,0 +1,33 @@
+// Estilos para el footer  
+footer {  
+    background-color: #2d323b;  
+    color: #fff;  
+    padding: 10px;  
+  
+   }
+
+  
+  footer a {  
+    color: #06a8d9;  
+    text-decoration: none;  
+    margin: 10px;  
+  }  
+
+  footer .container {  
+    display: flex;  
+    justify-content: space-between;  
+    align-items: center;  
+  }  
+  
+  
+  footer nav ul, footer .social ul {  
+    list-style: none;  
+    padding: 10;  
+    margin: 10;  
+  }  
+  
+  
+  .footer-logo {  
+    max-width: 80px; /* Ajusta el ancho máximo del logo */  
+    height: auto; /* Mantiene la proporción de aspecto */  
+  }

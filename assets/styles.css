@@ -1,0 +1,184 @@
+/* Reset CSS para asegurar consistencia entre navegadores */
+* {
+  margin: 0; /* Elimina el margen por defecto */
+  padding: 0; /* Elimina el relleno por defecto */
+  box-sizing: border-box; /* Incluye el padding y el borde en el tamaño total del elemento */
+}
+
+/* Estilo Fuente */
+body {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  line-height: 1.6; /* Define la altura de línea */
+  color: #333; /* Color del texto */
+}
+
+/* Estilo del navbar */
+header {  
+    background-color: #2d323b;  /* Color de fondo del navbar */
+    text-align: center; /* Centra los elementos horizontalmente */  
+  }  
+  
+  header nav {  
+    display: flex; /* Usa Flexbox para un diseño responsive */  
+    justify-content: space-around; /* Distribuye los elementos uniformemente */  
+    align-items: center; /* Alinea elementos verticalmente */  
+  }  
+  
+  header nav img {  
+      max-width: 200px;  /* tamaño del logo, ancho */  
+      cursor: pointer; /* Cambia el cursor a mano al pasar sobre la imagen */  
+  }  
+  
+  header nav a {  
+    text-decoration: none;  
+    color: #ffffff; /* Color de los items del menu */  
+    padding: 10px; /* Espacio alrededor de cada enlace */  
+    margin: 0 10px; /* Espacio entre los enlaces */  
+    border-radius:20px;  
+   
+  }  
+  
+  header nav a:hover {  
+    background-color: #65dada; /* Color del hover de los links*/  
+    color: #000000
+  }  
+  
+  header nav button {  
+    background-color: #65dada; /* Color de fondo del botón reservar cita*/  
+    font-family: "Quicksand", sans-serif;
+    border: none;  
+    color: rgb(0, 0, 0);  /* Color texto del botón reservar cita*/  
+    padding: 15px 20px;  
+    text-align: center;  
+    text-decoration: none;  
+    display: inline-block;  
+    font-size: 15px;  
+    margin: 0 5px;  
+    border-radius: 20px;  
+    cursor: pointer;  
+  }
+
+  .header-image img {
+    max-width: 100%; /* Ancho máximo de la imagen */
+    height: auto; /* Altura automática */
+  }  
+  
+
+  /* Estilo de la sección BIENVENIDA */
+  .section-welcome {
+    padding: 0; /* Relleno */
+    text-align: center; /* Centra el texto */
+    color: rgb(31, 0, 143);/* color del titulo */
+    background-color: #d2e9ff; /* Color de fondo */
+  }
+.welcome-text {
+  color: #7a7a7a;/* color del texto */
+}
+
+
+  /* Estilo de la sección SERVICIOS MEDICOS */
+.section-services {
+  padding: 1rem; /* Relleno */
+  text-align: center; /* Centra el texto */
+}
+
+.services-grid {
+  display: grid; /* Usa grid para la disposición */
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(200px, 1fr)
+  ); /* Define las columnas */
+  gap: 5rem; /* Espacio entre los elementos */
+  margin-top: 1.5rem; /* Margen superior */
+}
+
+.services-item img {
+  width: 40%; /* Ancho de la imagen */
+  height: auto; /* Altura automática */
+  /*border-radius: 5px;  Bordes redondeados */
+}
+                                                        
+
+  /* Estilo de la sección TESTIMONIOS */
+  .testimony-section {
+    padding: 1rem; /* Relleno */
+    text-align: center; /* Centra el texto */
+    background-color: #d2e9ff; /* Color de fondo */
+  }
+  .testimony-grid {
+    display: grid; /* Usa grid para la disposición */
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(200px, 1fr)
+    ); /* Define las columnas */
+    gap: 5rem; /* Espacio entre los elementos */
+    margin-top: 1.5rem; /* Margen superior */
+  }
+
+
+    /* Estilo FOOTER */
+  footer {  
+    background-color: #2d323b; /* Negro */  
+    color: #fff; 
+    padding: 20px;  
+  }  
+  
+  .container {  
+    
+    margin: 0 auto;  
+    display: flex;  
+    justify-content: space-between; /* Distribuye el espacio entre los elementos */  
+    align-items: center; /* Alinea verticalmente */  
+  }  
+  
+  .logo img {  
+    max-height: 100px; /* tamaño logo */  
+    margin-right: 50px;  
+  }  
+  
+  nav ul {  
+    list-style: none;  
+    padding: 10;  
+    margin: 10;  
+    display: flex;  
+    
+  }  
+  
+  nav ul a {  
+    color: #65dada; /* color links footer*/  
+    text-decoration: none; /* Quita el subrayado */  
+  }
+
+  nav li {  
+    margin-right: 50px;  
+    margin-left: 50px; 
+  
+  } 
+  
+  
+  .address {  
+    flex: 1; /* Permite que la dirección se expanda */  
+    text-align: center; /* Alinea el texto a la derecha */  
+  }  
+  
+  .social ul {  
+    list-style: none;  
+    padding: 0;  
+    margin: 0;  
+    display: flex;  
+  }  
+  
+  .social li {  
+    margin-left: 10px; 
+    margin-right: 10px; 
+  }  
+  
+  .social a {  
+    text-decoration: none;  
+    color: #65dada; /* color links rrss*/  
+    
+  }  
+  
+  

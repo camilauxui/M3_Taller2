@@ -1,0 +1,92 @@
+// Estilos generales  
+// =======================================  
+
+// Estilos de la sección Bienvenida  
+.section-welcome {  
+    padding: 0; /* Relleno */  
+    text-align: center; /* Centra el texto */  
+    color: rgb(31, 0, 143);/* color del titulo */  
+    background-color: #d2e9ff; /* Color de fondo */  
+  }  
+  
+  .welcome-text {  
+    color: #7a7a7a;/* color del texto */  
+  }  
+  
+  // Estilos de la sección Servicios Médicos  
+  .section-services {  
+    padding: 1rem; /* Relleno */  
+    text-align: center; /* Centra el texto */  
+  }  
+  
+  .services-grid {  
+    display: grid; /* Usa grid para la disposición */  
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Define las columnas */  
+    gap: 5rem; /* Espacio entre los elementos */  
+    margin-top: 1.5rem; /* Margen superior */  
+  }  
+  
+  .services-item img {  
+    width: 40%; /* Ancho de la imagen */  
+    height: auto; /* Altura automática */  
+  }  
+  
+  // Estilos de la sección Testimonios  
+  .testimony-section {  
+    padding: 1rem; /* Relleno */  
+    text-align: center; /* Centra el texto */  
+    background-color: #d2e9ff; /* Color de fondo */  
+  }  
+  
+  .testimony-grid {  
+    display: grid; /* Usa grid para la disposición */  
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Define las columnas */  
+    gap: 5rem; /* Espacio entre los elementos */  
+    margin-top: 1.5rem; /* Margen superior */  
+  }  
+  
+  // Estilos de la sección Equipo Médico  
+  .section-team {  
+    padding: 1rem; /* Relleno */  
+    text-align: center; /* Centra el texto */  
+  }  
+  
+  .team-grid {  
+    display: grid; /* Usa grid para la disposición */  
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Define las columnas */  
+    gap: 5rem; /* Espacio entre los elementos */  
+    margin-top: 1.5rem; /* Margen superior */  
+  }  
+  
+  .team-item img {  
+    width: 40%; /* Ancho de la imagen */  
+    height: auto; /* Altura automática */  
+  }  
+  
+  // Estilos de la sección Contacto  
+  .contact-section {  
+    padding: 1rem; /* Relleno */  
+    text-align: center; /* Centra el texto */  
+  }  
+  
+  .contact-form {  
+    display: grid; /* Usa grid para la disposición */  
+    grid-template-columns: 1fr; /* Define las columnas */  
+    gap: 2rem; /* Espacio entre los elementos */  
+    margin-top: 1.5rem; /* Margen superior */  
+  }  
+  
+  .contact-form input, .contact-form textarea {  
+    width: 100%; /* Ancho */  
+    padding: 1rem; /* Relleno */  
+    border: none; /* Borde */  
+    border-radius: 5px; /* Bordes redondeados */  
+    background-color: #f0f0f0; /* Color de fondo */  
+  }  
+  
+  .contact-map {  
+    width: 100%; /* Ancho */  
+    height: 300px; /* Altura */  
+    border-radius: 5px; /* Bordes redondeados */  
+    margin-top: 2rem; /* Margen superior */  
+  }

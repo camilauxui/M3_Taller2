@@ -1,0 +1,31 @@
+// Configuración de la base  
+* {  
+    margin: 0;  
+    padding: 0;  
+  }  
+  // Establecer estilos para enlaces  
+a {  
+    text-decoration: none;  
+    color: rgb(55, 61, 67);  
+  }  
+  
+  // Establecer estilos para imágenes  
+  img {  
+    border: none;  
+  }  
+  
+  // Establecer estilos para listas  
+  ul, ol {  
+    list-style: none;  
+  }  
+  
+  // Establecer estilos para tablas  
+  table {  
+    border-collapse: collapse;  
+  }  
+  
+  // Establecer estilos para celdas de tabla  
+  td {  
+    border: 1px solid #064a5e;  
+    padding: 10px;  
+  }  

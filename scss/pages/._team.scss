@@ -1,0 +1,31 @@
+ 
+  /* Estilo de la sección Equipo Médico */  
+  .section-team {  
+    padding: 1rem; /* Relleno */  
+  }  
+  
+  .team-grid {  
+    display: grid; /* Usa grid para la disposición */  
+    grid-template-columns: repeat(2, 1fr);  /* Define las columnas */ 
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem; /* Espacio entre los elementos */  
+    margin-top: 1.5rem; /* Margen superior */  
+    margin: 0 auto;  
+    padding: 0 2px;  
+    max-width: 700px;
+
+  }  
+   
+  .team-item img {  
+    object-fit: cover;  
+    margin-top: -50px; /* Ajusta la posición de la imagen */  
+    border-radius: 0; /* Elimina la curva en la esquina superior de la imagen */  
+  }
+
+  .team-item {  
+    padding: 2rem;  
+    border: 1px solid #2472bc;  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+    margin-bottom: 10px;  
+    padding-top: 10px; /* Ajusta la posición del contenido de la card */  
+  }

@@ -1,0 +1,13 @@
+// Estilo de botón  
+button {  
+    @include boton;  
+    font-family: "Quicksand", sans-serif;  
+    padding: 15px 20px;  
+    text-align: center;  
+    text-decoration: none;  
+    display: inline-block;  
+    font-size: 15px;  
+    margin: 0 5px;  
+    border-radius: 20px;  
+    cursor: pointer;  
+  }

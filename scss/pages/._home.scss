@@ -1,0 +1,59 @@
+/* Estilo banner principal */  
+.responsive-img {  
+  width: 100%; /* Ancho: 100% del contenedor */  
+  height: auto; /* Alto: automático para mantener la relación de aspecto */  
+  margin: 0 auto; /* Margen: 0 en los lados y automático en el centro */  
+  display: block; /* Display: bloque para hacer que la imagen sea un bloque */  
+}  
+
+
+/* Estilo de la sección BIENVENIDA */  
+.section-welcome {  
+    padding: 0; /* Relleno */  
+    text-align: center; /* Centra el texto */  
+    color: rgb(31, 0, 143);/* color del titulo */  
+    background-color: #d2e9ff; /* Color de fondo */  
+  }  
+  
+  .welcome-text {  
+    color: #7a7a7a;/* color del texto */  
+  }  
+  
+  /* Estilo de la sección SERVICIOS MEDICOS */  
+  .section-services {  
+    padding: 1rem; /* Relleno */  
+    text-align: center; /* Centra el texto */  
+  }  
+  
+  .services-grid {  
+    display: grid; /* Usa grid para la disposición */  
+    grid-template-columns: repeat(  
+      auto-fit,  
+      minmax(200px, 1fr)  
+    ); /* Define las columnas */  
+    gap: 5rem; /* Espacio entre los elementos */  
+    margin-top: 1.5rem; /* Margen superior */  
+  }  
+  
+  .services-item img {  
+    width: 40%; /* Ancho de la imagen */  
+    height: auto; /* Altura automática */  
+    /*border-radius: 5px;  Bordes redondeados */  
+  }  
+  
+  /* Estilo de la sección TESTIMONIOS */  
+  .testimony-section {  
+    padding: 1rem; /* Relleno */  
+    text-align: center; /* Centra el texto */  
+    background-color: #d2e9ff; /* Color de fondo */  
+  }  
+  
+  .testimony-grid {  
+    display: grid; /* Usa grid para la disposición */  
+    grid-template-columns: repeat(  
+      auto-fit,  
+      minmax(200px, 1fr)  
+    ); /* Define las columnas */  
+    gap: 5rem; /* Espacio entre los elementos */  
+    margin-top: 1.5rem; /* Margen superior */  
+  }

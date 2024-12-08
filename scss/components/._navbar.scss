@@ -1,0 +1,33 @@
+// Estilo del navbar  
+header {  
+  background-color: #2d323b;  /* Color de fondo del navbar */  
+  text-align: center; /* Centra los elementos horizontalmente */  
+}  
+
+header nav {  
+  display: flex; /* Usa Flexbox para un diseño responsive */  
+  justify-content: space-around; /* Distribuye los elementos uniformemente */  
+  align-items: center; /* Alinea elementos verticalmente */  
+}  
+
+header nav img {  
+  max-width: 200px;  /* tamaño del logo, ancho */  
+  cursor: pointer; /* Cambia el cursor a mano al pasar sobre la imagen */  
+}  
+
+header nav a {  
+  text-decoration: none;  
+  color: #ffffff; /* Color de los items del menu */  
+  padding: 10px; /* Espacio alrededor de cada enlace */  
+  margin: 0 10px; /* Espacio entre los enlaces */  
+  border-radius:20px;  
+}  
+
+header nav a:hover {  
+  background-color: #65dada; /* Color del hover de los links*/  
+  color: #000000  
+}  
+
+header nav button {  
+  @extend button; /* Utiliza el estilo de botón ya definido */  
+}

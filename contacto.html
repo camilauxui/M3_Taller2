@@ -1,0 +1,144 @@
+<!DOCTYPE html>  
+<html lang="es">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Contacto</title>  
+    <!-- Enlace a Bootstrap CSS -->  
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">  
+    <!-- Enlace a la hoja de estilos personalizada -->  
+    <link rel="stylesheet" href="css/styles.css" />  
+</head>  
+<body>  
+  <!-- Menú versión con Bootstrap -->  
+  <nav class="navbar navbar-expand-lg navbar-light bg-secondary">  
+      <a class="navbar-brand" href="index.html">  
+        <img src="images/medical-center.png" alt="Logotipo del Hospital" style="height: 40px;">  
+      </a>  
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">  
+        <span class="navbar-toggler-icon"></span>  
+      </button>  
+      <div class="collapse navbar-collapse justify-content-start" id="navbarNav">  
+        <ul class="navbar-nav">  
+          <li class="nav-item">  
+            <a class="nav-link text-white" href="equipo.html">Equipo médico</a>  
+          </li>  
+          <li class="nav-item">  
+            <a class="nav-link text-white" href="contacto.html">Contacto</a>  
+          </li>  
+          <li class="nav-item">  
+            <a class="btn btn-primary" href="#" role="button">Reservar Cita</a>  
+          </li>  
+        </ul>  
+      </div>  
+  </nav>  
+
+  <!-- Sección de Contacto -->  
+  <section class="contact-section py-5">  
+    <div class="container">  
+      <h1>Contáctanos</h1>  
+      <!-- Formulario de Contacto en Bootstrap -->  
+      <div class="contact-form mt-5">  
+        <form action="#" method="POST">
+              <div class="form-group">  
+                <label for="nombre">Nombre:</label>  
+                <input type="text"   
+                       class="form-control"   
+                       id="nombre"   
+                       required   
+                       placeholder="Ingrese nombre y apellido">  
+              </div>  
+
+              <div class="form-group">  
+                <label for="email">Correo electrónico:</label>  
+                <input type="email"   
+                       class="form-control"   
+                       id="email"   
+                       required   
+                       name="email"   
+                       placeholder="nombre@dominio.com">  
+              </div>  
+
+              <div class="form-group">  
+                <label for="asunto">Asunto:</label>  
+                <input type="text"   
+                       class="form-control"   
+                       id="asunto"   
+                       name="asunto"   
+                       required   
+                       placeholder="Motivo de su consulta">  
+              </div>  
+
+              <div class="form-group">  
+                <label for="mensaje">Mensaje:</label>  
+                <textarea id="mensaje"   
+                          class="form-control"   
+                          name="mensaje"   
+                          rows="8"   
+                          required   
+                          placeholder="Ingrese su mensaje"></textarea>  
+              </div>  
+
+              <button type="submit" class="btn btn-primary mt-3">Enviar mensaje</button>  
+            </form>  
+          </div>  
+
+          <!-- Mapa de ubicación -->  
+          <div class="contact-map mt-5">  
+              <h2>Nuestra ubicación</h2>  
+              <h3>Visítanos en: Calle Falsa 123, Ciudad Falsa.</h3>  
+              <iframe  
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.997087571647!2d-70.6482!3d-33.4372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDI2JzE0LjAiUyA3MMKwMzgnNTMuNSJX!5e0!3m2!1ses!2scl!4v1635959123456!5m2!1ses!2scl"  
+                  width="100%"  
+                  height="400"  
+                  style="border:0;"  
+                  allowfullscreen=""  
+                  loading="lazy"  
+                  referrerpolicy="no-referrer-when-downgrade">  
+              </iframe>  
+          </div>  
+      </div>  
+  </section>  
+
+  <!-- FOOTER -->  
+  <footer class="bg-dark text-white py-3">  
+    <div class="container">  
+      <div class="row align-items-center">  
+        <div class="col-md-2 text-center mb-4 mb-md-0">  
+          <img src="images/logo_footer.webp" alt="Logo Medical Center" class="img-fluid footer-logo">  
+        </div>  
+        <div class="col-md-3">  
+          <nav>  
+            <ul class="list-unstyled">  
+              <li><a href="equipo.html" class="text-white">Equipo Médico</a></li>  
+              <li><a href="contacto.html" class="text-white">Contacto</a></li>  
+              <li><a href="index.html" class="text-white">Servicios</a></li>  
+            </ul>  
+          </nav>  
+        </div>  
+        <div class="col-md-3">  
+          <div class="address">  
+            <p>Dirección:<br>  
+               Calle Falsa 123<br>   
+               Fono: +562 12345678</p>  
+          </div>  
+        </div>  
+        <div class="col-md-4 text-center">  
+          <div class="social">  
+            <ul class="list-inline">  
+              <li class="list-inline-item"><a href="https://facebook.com/" target="_blank" class="text-white">Facebook</a></li>  
+              <li class="list-inline-item"><a href="https://twitter.com/" target="_blank" class="text-white">X</a></li>  
+              <li class="list-inline-item"><a href="https://instagram.com/" target="_blank" class="text-white">Instagram</a></li>  
+            </ul>  
+          </div>  
+        </div>  
+      </div>  
+    </div>  
+  </footer>  
+
+  <!-- Bootstrap and jQuery scripts -->  
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>  
+</body>  
+</html>
