@@ -35,17 +35,15 @@ JavaScript es un lenguaje de programación que se ejecuta en un solo hilo (singl
 
 Este ciclo continúa, lo que permite que JavaScript maneje múltiples operaciones asíncronas mientras mantiene una interfaz de usuario receptiva.
 
-# c
-
 ## Bloque try/catch con Validaciones Personalizadas:
 
-**Se valida que los campos no estén vacíos.**:
-El campo "Email" utiliza RegEx para verificar que el formato sea válido.
-El campo "Teléfono" también utiliza una validación para ajustar al formato indicado.
+**Se valida que los campos no estén vacíos**:
+- El campo "Email" utiliza "RegEx" para verificar que el formato sea válido.
+- El campo "Teléfono" utiliza una validación para revisar que esté en el formato indicado.
 
 **Mostrar Resultados en la Interfaz**:
 
-Se muestra un mensaje de éxito en texto color verde si el formulario està llenado correctamente.
+Se muestra un mensaje de éxito en texto color verde jusnto al botòn enviar si el formulario està llenado correctamente.
 Si ocurre un error, el mensaje aparece en rojo con una explicación.
 
 **Uso de debugger**:
@@ -58,11 +56,11 @@ Se incluye el debugger; dentro del bloque try para depurar el código y asegurar
 
 **Resultado Esperado**:
 
-**Formulario Inválido**:
+**Formulario Inválido, mal completado**:
 
 Si el usuario omite un campo o introduce datos inválidos, recibirá un mensaje explicando el error.
-Ejemplo: "El teléfono debe tener el formato +56 9 1234 5678."
+- Ejemplo: "El teléfono debe tener el formato +56 9 1234 5678."
 
-**Formulario Válido**:
+**Formulario Válido, correctamente completado**:
 
 Si todos los campos tienen datos válidos, se mostrará el mensaje: "¡Mensaje enviado correctamente!..."
