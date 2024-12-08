@@ -3,7 +3,7 @@ function logMessage() {
     console.log("La página se ha cargado correctamente");  
 }   
 
-// Muestra el nombre del servicio en la consola al hacer clic sobre éste  
+// Muestra el nombre del servicio en la consola al hacer clic sobre éste, en la secciòn Servicios 
 function showServiceInfo(serviceName) {  
     console.log(`Servicios: ${serviceName}`);  
 }  
@@ -17,10 +17,10 @@ servicesItems.forEach(item => {
 
 // Función para solicitar información al usuario al cargar la página  
 function solicitarInformacion() {  
-    // Solicitar nombre y validar que sea una cadena no vacía  
+    // Solicitar nombre 
     let nombre;  
     do {  
-        nombre = prompt("Por favor ingresa tus datos de contacto:\n\nNombre:");  
+        nombre = prompt("Por favor ingresa tus datos de contacto:\n\nNombre y apellido:");  
         if (nombre === null) { // Si el usuario cancela, salir de la función  
             return;  
         }  
@@ -53,17 +53,17 @@ function solicitarInformacion() {
         if (telefono.length === 9 && !isNaN(telefono)) { // Verifica que contenga 9 dígitos y que sea un número  
             break;  
         } else {  
-            alert("El teléfono debe tener exactamente 9 dígitos y contener solo números. Intenta de nuevo.");  
+            alert("El teléfono debe tener 9 dígitos y contener solo números. Intenta de nuevo.");  
         }  
     } while (true);  
 
     // Mostrar la información en la consola y en un alert  
     console.log(`Nombre: ${nombre}, Email: ${email}, Teléfono: ${telefono}`);  
-    alert(`Gracias por la información entregada.\nTus datos están seguros y no serán usados para otros fines.`);  
+    alert(`Gracias por la información entregada.\nTus datos están seguros y serán usados sólo para fines informativos.`);  
 }  
 
 // Evento que se llama cuando la página se carga completamente  
 window.onload = () => {  
-    logMessage(); // Llama a la función para mostrar el mensaje de carga  
-    solicitarInformacion(); // Llama a la función para solicitar información  
+    logMessage();
+    solicitarInformacion(); 
 };
